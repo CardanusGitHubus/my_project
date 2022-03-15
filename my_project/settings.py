@@ -16,14 +16,14 @@ import psycopg2
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-fbe$ba5yr-5@&7vxuhaqb7l(x0mat)a@8c+$kl7ygk9zrjg$(p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
